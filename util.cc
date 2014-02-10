@@ -6,8 +6,12 @@
  * Massachusetts Institute of Technology
  *
  * All Rights Reserved
- * */
-
+ * 
+ * Util.cc
+ *
+ *  Created on: Mar 2, 2009
+ *      Author: ydzhang
+ */
 
 #include "util.h"
 

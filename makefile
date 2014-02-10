@@ -1,3 +1,19 @@
+# -*- C++ -*-
+#
+# Copyright (c) 2014
+# Spoken Language Systems Group
+# MIT Computer Science and Artificial Intelligence Laboratory
+# Massachusetts Institute of Technology
+#
+# All Rights Reserved
+
+# FILE: makefile 
+#										                            *
+#   				      				                            *
+# Chia-ying (Jackie) Lee <chiaying@csail.mit.edu>					*
+# Feb 2014							                                *
+#*********************************************************************/
+
 # To build a gibbs sampler for the phone-learning project
 
 #CC = icpc
@@ -8,7 +24,7 @@ CC = g++
 CFLAGS = -c -O3 -fopenmp 
 SOURCES = main.cc decoder.cc loader.cc model.cc data.cc calculator.cc cluster.cc gmm.cc mixture.cc datum.cc segment.cc bound.cc config.cc toolkit.cc
 OBJECTS=$(SOURCES:.cc=.o)
-EXECUTABLE = gibbs
+EXECUTABLE = decode_to_pg 
 
 #ifeq ($(INTEL_TARGET_ARCH), ia32)
 #MKL_LINKS=-Wl,--start-group -lmkl_intel -lmkl_intel_thread -lmkl_core -Wl,--end-group -liomp5 -lpthread
